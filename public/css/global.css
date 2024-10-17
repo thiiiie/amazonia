@@ -166,11 +166,12 @@
   #banner {
     width: 100%; /* Para telas maiores */
     height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: -100px;
   }
 
   /* Estilos para o product-slider */
 .product-slider {
-  margin: -100px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 10px;
   background-color: #f4f4f4;
   overflow-x: scroll;
