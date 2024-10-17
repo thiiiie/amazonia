@@ -1,43 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Loja</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <section>
+    <div class="friday">Último dia das Promoções <strong>Black Friday!</strong></div> 
+  </section>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="menu-logo">
+      <i class="fas fa-bars menu-icon"></i>
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo Minha Loja">
+      </div>
+    </div>
+    <div class="user-options">
+      <i class="fas fa-user account-icon"></i>
+      <i class="fas fa-shopping-cart cart-icon"></i>
+    </div>
+  </header>
+
+
+
+
+
+  <section>
+        <img id="banner" src="./images/banner3.jpg" alt="Produto 1">
+  </section>
+
+  <!-- Esteira lateral de produtos -->
+<section class="product-slider">
+  <div class="product-items">
+    <div class="product-item" onclick="window.location.href='https://example.com'">
+      <p>Somente <strong> 7 un.</strong> </br> Black Friday</p>
+      <img src="./images/cadeira.png" alt="Produto 1">
+    </div>
+    <div class="product-item" onclick="window.location.href='https://example.com'">
+      <p>Somente <strong> 7 un.</strong> </br> Black Friday</p>
+      <img src="./images/galaxy.png" alt="Produto 1">
+    </div>
+    <div class="product-item" onclick="window.location.href='https://example.com'">
+      <p>Somente na </br>Black Friday</p>
+      <img src="./images/note4.png" alt="Produto 2">
+    </div>
+    <div class="product-item" onclick="window.location.href='https://example.com'">
+      <p>Obter na</br> Black Friday</p>
+      <img src="./images/sofa4.png" alt="Produto 3">
+    </div>
+    <div class="product-item" onclick="window.location.href='https://example.com'">
+      <p>Obter na</br> Black Friday</p>
+      <img src="./images/geladeira.png" alt="Produto 4">
+    </div>
+    <div class="product-item" onclick="window.location.href='https://example.com'">
+      <p>Obter na</br> Black Friday</p>
+      <img src="./images/fogao.png" alt="Produto 5">
+    </div>
+    <div class="product-item" onclick="window.location.href='https://example.com'">
+      <p>Obter na</br> Black Friday</p>
+      <img src="./images/slide2.png" alt="Produto 6">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Grid de Produtos -->
+  <section class="product-grid">
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./images/fritadeira.png" alt="Produto 1">
+      </div>
+      <div class="product-details">
+        <h2>Fritadeira Sem Óleo Air Fryer 5L, Mondial, Preto/Inox, 1900W, 110V - AFN-50-BI</h2>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.5</span>
+        </div>
+        <p class="purchased">Mais de 900 compras no mês passado</p>
+        <p class="stock-warning1">Restam 53 unidades<span class="blinking-dot1"></span></p>
+        <p class="price">R$ 67,99 <span class="old-price">R$ 359,99</span></p>
+        <p class="payment">à vista no Pix ou no cartão</p>
+        <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+        <button class="buy-button" onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+      </div>
+    </div>
+
+    
+      <div class="product-card">
+        <div class="product-image">
+          <img src="./images/tv.png" alt="Produto 1">
+        </div>
+        <div class="product-details">
+          <h2>Samsung Smart TV 55" Crystal UHD 4K 55DU8000 - Painel Dynamic Crystal Color, Gaming Hub</h2>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.5</span>
+          </div>
+          <p class="purchased">Mais de 900 compras no mês passado</p>
+          <p class="stock-warning">Restam 7 unidades<span class="blinking-dot"></span></p>
+          <p class="price">R$ 114,90 <span class="old-price">R$ 359,99</span></p>
+          <p class="payment">à vista no Pix ou no cartão</p>
+          <!-- <p class="delivery-time">Receba até 9 dias úteis</p> -->
+          <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+          <button class="buy-button" onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+        </div>
+      </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./images/iphone15promax.png" alt="Produto 1">
+      </div>
+      <div class="product-details">
+        <h2>Apple iPhone 15 Pro Max (128 GB) — Titânio preto</h2>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.5</span>
+        </div>
+        <p class="purchased">Mais de 900 compras no mês passado</p>
+        <p class="stock-warning2">Restam 14 unidades<span class="blinking-dot2"></span></p>
+        <p class="price">R$ 197,00 <span class="old-price">R$ 149,99</span></p>
+        <p class="payment">à vista no Pix ou no cartão</p>
+        <p class="delivery-time">Receba até 9 dias úteis</p>
+        <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+        <button class="buy-button"onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./images/gold.png" alt="Produto 1">
+      </div>
+      <div class="product-details">
+        <h2>Apple iPhone 15 Pro (256 GB) — Dourado</h2>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.5</span>
+        </div>
+        <p class="purchased">Mais de 900 compras no mês passado</p>
+        <p class="stock-warning">Restam 4 unidades<span class="blinking-dot"></span></p>
+        <p class="price">R$ 159,99 <span class="old-price">R$ 149,99</span></p>
+        <p class="payment">à vista no Pix ou no cartão</p>
+        <p class="delivery-time">Receba até 9 dias úteis</p>
+        <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+        <button class="buy-button"onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+      </div>
+    </div>
+
+
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./images/sofa4.png" alt="Produto 1">
+      </div>
+      <div class="product-details">
+        <h2>Sofá Retrátil e Reclinável 2,55m Molas Ensacadas Cama Inbox Spazus com Bordado 3d Velusoft Cinza</h2>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.5</span>
+        </div>
+        <p class="purchased">Mais de 900 compras no mês passado</p>
+        <p class="stock-warning2">Restam 18 unidades<span class="blinking-dot2"></span></p>
+        <p class="price">R$ 124,99 <span class="old-price">R$ 149,99</span></p>
+        <p class="payment">à vista no Pix ou no cartão</p>
+        <p class="delivery-time">Receba até 9 dias úteis</p>
+        <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+        <button class="buy-button"onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./images/note4.png" alt="Produto 1">
+      </div>
+      <div class="product-details">
+        <h2>Notebook Acer Nitro V15 ANV15-51-58AZ 13ª Geração Intel Core i5-13420H, 8GB RAM, 512GB SSD, NVIDIA RTX 3050, 15.6" FHD LED IPS 144Hz, Windows 11, Preto, Retroiluminado</h2>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.5</span>
+        </div>
+        <p class="purchased">Mais de 900 compras no mês passado</p>
+        <p class="stock-warning">Restam 11 unidades<span class="blinking-dot"></span></p>
+        <p class="price">R$ 199,99 <span class="old-price">R$ 149,99</span></p>
+        <p class="payment">à vista no Pix ou no cartão</p>
+        <p class="delivery-time">Receba até 9 dias úteis</p>
+        <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+        <button class="buy-button"onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./images/cadeira.png" alt="Produto 1">
+      </div>
+      <div class="product-details">
+        <h2>Cadeira Gamer Profissional TGC12 Preta/Verde ThunderX3.</h2>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.5</span>
+        </div>
+        <p class="purchased">Mais de 900 compras no mês passado</p>
+        <p class="stock-warning1">Restam 33 unidades<span class="blinking-dot1"></span></p>
+        <p class="price">R$ 59,99 <span class="old-price">R$ 149,99</span></p>
+        <p class="payment">à vista no Pix ou no cartão</p>
+        <p class="delivery-time">Receba até 9 dias úteis</p>
+        <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+        <button class="buy-button"onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./images/geladeira.png" alt="Produto 1">
+      </div>
+      <div class="product-details">
+        <h2>Geladeira Brastemp French Door Frost Free A+++ 554l Inox Bro85ak - 220v</h2>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.5</span>
+        </div>
+        <p class="purchased">Mais de 900 compras no mês passado</p>
+        <p class="stock-warning">Restam 9 unidades<span class="blinking-dot"></span></p>
+        <p class="price">R$ 199,99 <span class="old-price">R$ 149,99</span></p>
+        <p class="payment">à vista no Pix ou no cartão</p>
+        <p class="delivery-time">Receba até 9 dias úteis</p>
+        <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+        <button class="buy-button"onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./images/fogao.png" alt="Produto 1">
+      </div>
+      <div class="product-details">
+        <h2>Fogão Atlas 5 Bocas preto Atenas Glass com Acendimento automático - Bivolt</h2>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.5</span>
+        </div>
+        <p class="purchased">Mais de 900 compras no mês passado</p>
+        <p class="stock-warning1">Restam 28 unidades<span class="blinking-dot1"></span></p>
+        <p class="price">R$ 139,99 <span class="old-price">R$ 149,99</span></p>
+        <p class="payment">à vista no Pix ou no cartão</p>
+        <p class="delivery-time">Receba até 9 dias úteis</p>
+        <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+        <button class="buy-button"onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./images/galaxy.png" alt="Produto 1">
+      </div>
+      <div class="product-details">
+        <h2>Smartphone Samsung Galaxy S24 Ultra, Galaxy AI, Selfie de 12MP, Tela de 6.8" 1-120Hz, 512GB, 12GB RAM - Titânio Preto</h2>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          <span>4.5</span>
+        </div>
+        <p class="purchased">Mais de 900 compras no mês passado</p>
+        <p class="stock-warning">Restam 2 unidades<span class="blinking-dot"></span></p>
+        <p class="price">R$ 67,99 <span class="old-price">R$ 149,99</span></p>
+        <p class="payment">à vista no Pix ou no cartão</p>
+        <p class="delivery-time">Receba até 9 dias úteis</p>
+        <p class="express-delivery">Entrega Expressa GRÁTIS pela Amazon</p>
+        <button class="buy-button"onclick="window.location.href='https://example.com'">Adquirir este produto</button>
+      </div>
+    </div>
+    <!-- Repetir para outros produtos -->
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+  </footer>
+</body>
 </html>

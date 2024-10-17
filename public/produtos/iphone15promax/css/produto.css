@@ -1,0 +1,103 @@
+body {
+    font-family: 'Inter', sans-serif; /* Define a fonte para todo o corpo da página */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #232F3E;
+    color: white;
+}
+
+.product-page {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.product-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.image-carousel {
+    display: flex;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    margin-bottom: 15px;
+}
+
+.product-image {
+    max-width: 100%; /* Mantém a largura máxima */
+    height: auto;
+}
+
+.pricing {
+    margin: 10px 0;
+}
+
+.current-price {
+    font-size: 24px;
+    color: #b12704;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #777;
+}
+
+.configuration p {
+    margin: 5px 0;
+}
+
+.buy-now {
+    padding: 12px;
+    background-color: #f3a847;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.buy-now:hover {
+    background-color: #e68a00;
+}
+
+.customer-reviews {
+    margin-top: 30px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.customer-photo {
+    width: 40px; /* Ajuste o tamanho da foto do cliente */
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-text {
+    flex: 1;
+}
+
+
