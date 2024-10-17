@@ -80,7 +80,7 @@
   }
   
   .product-image img {
-    max-width: 130px; /* Mantém a largura máxima */
+    max-width: 150px; /* Mantém a largura máxima */
     height: auto;
   }
   
@@ -340,6 +340,10 @@
     .product-image {
       margin-right: 20px;
       margin-bottom: 0px;
+    }
+
+    .product-image img {
+      width: 125px;
     }
   
     .user-options {
