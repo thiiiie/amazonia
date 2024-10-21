@@ -41,6 +41,73 @@
     display: flex;
     align-items: center;
   }
+
+  .prime{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Coloca o conteúdo nos extremos */
+    width: 100%; /* Garante que o espaço seja utilizado completamente */
+    padding: 5px 30px 5px 30px;
+    background-color: #37475A;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+   
+  }
+
+  .assine-prime{
+    background-color: #0073E6;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 10px 6px 10px;
+    border-radius: 20px;
+    border: none;
+  }
+
+  .anuncio{
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex; /* Exibe a imagem e o restante lado a lado */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    
+  }
+  .anuncio img {
+    width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-right: 20px; /* Espaço entre a imagem e o conteúdo à direita */
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna (vertical) */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    
+  }
+  
+  .estrelas {
+    color: gold; /* Cor das estrelas */
+    font-size: 15px; /* Tamanho das estrelas */
+  }
+  
+  .anuncio p {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .valor {
+    color: rgb(0, 179, 45); /* Cor para destacar o valor */
+    font-size: 15px; /* Tamanho do texto para o valor */
+    margin-top: 10px;
+  }
+  .anuncio1{
+    background-color: #ffffff;
+    justify-content: right;
+    align-items: right;
+    display: flex;
+    padding: 0px 20px 10px 0px;
+    font-size: 12px;
+    
+  }
   
   .account-icon, .cart-icon {
     font-size: 24px;
