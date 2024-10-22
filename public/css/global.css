@@ -47,10 +47,10 @@
     align-items: center;
     justify-content: space-between; /* Coloca o conteúdo nos extremos */
     width: 100%; /* Garante que o espaço seja utilizado completamente */
-    padding: 5px 30px 5px 30px;
+    padding: 5px 20px 5px 20px;
     background-color: #37475A;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
    
   }
@@ -58,7 +58,7 @@
   .assine-prime{
     background-color: #0073E6;
     color: #fff;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     padding: 6px 10px 6px 10px;
     border-radius: 20px;
